@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let texto = "";
+    let intro = "";
+
+   do{
+        intro = prompt("Introduce un texto");
+        if(intro.length>texto.length){
+            texto = intro;
+        }
+    }while(intro!="");
+    alert(texto);
+</script>
+</body>
+</html>

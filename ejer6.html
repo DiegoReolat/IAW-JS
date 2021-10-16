@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numero = parseInt(prompt("Dame un numero"));
+    let texto = "";
+
+    if(numero%2==0 && numero%3!=0 && numero%5!=0){
+        texto = "Es múltiplo de dos";
+    }
+    if(numero%3==0 && numero%2!=0 && numero%5!=0){
+        texto = "Es múltiplo de tres ";
+    }
+    if(numero%5==0 && numero%2!=0 && numero%3!=0){
+        texto = "Es múltiplo de cinco ";
+    }
+    if(numero%2==0 && numero%3==0 && numero%5!=0) {
+        texto = " Es multiplo de 2 y de 3";
+    }
+    if(numero%2==0 && numero%5==0 && numero%3!=0){
+        texto = "Es multiplo de 2 y de 5";
+    }
+    if(numero%2!=0 && numero%5==0 && numero%3==0){
+        texto = "Es multiplo de 3 y de 5";
+    }
+    if(numero%2==0 && numero%3==0 && numero%5==0){
+        texto = "Es múltiplo de 2, de 3 y de 5";
+    }
+    alert(texto);
+</script>
+</body>
+</html>

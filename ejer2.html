@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let nombre = prompt("Dime tu nombre");
+    let apellido1 = prompt("Dime tu apellido 1");
+    let apellido2 = prompt("Dime tu apellido 2");
+    let salario = parseInt(prompt("Dime tu salario"));
+    let edad = prompt("Dime tu edad");
+    if(salario>2000){
+
+    } else if(salario<=2000 && salario>=1000){
+        if(edad>45){
+            salario=salario + salario * 0.03;
+        }else{
+            salario = salario + salario *0.10;
+        }
+    }else if(salario<1000){
+        if(edad<30){
+            salario = 1100;
+        }else if(edad>=30 && edad<=45){
+            salarioo = salario + salario* 0.03;
+        }else if(edad>45){
+            salario = salario + salario *0.15;
+        }
+    }
+
+    alert(nombre + apellido1 + apellido2+ ("Tu salario es de : ") + salario + '€');
+
+</script>
+</body>
+</html>

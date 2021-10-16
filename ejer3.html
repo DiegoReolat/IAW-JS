@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(Math.random()*100 + 1);
+    let volverjugar = true;
+    let u = 0;
+    let jugando = true;
+    let contador = 1;
+    while(jugando==true) {
+        do {
+            alert(n);
+            u = prompt("Dame un numero del 1 al 100");
+            if (u == null) {
+                jugando = false;
+                alert("Has decidido dejar de jugar");
+            } else if (u <= 1 || u >= 100) {
+                alert("Error");
+            }
+        } while (u < 1 && u > 100 && jugando==true);
+        if(jugando==true) {
+            if (n > u) {
+                alert("el numero es mayor");
+                contador++;
+            } else if (n < u) {
+                alert("el numero es menor");
+                contador++;
+            } else if(n==u){
+                alert("Has acertado en: "+ contador + " intentos");
+                contador = 1;
+                jugando = confirm("¿Quieres volver a jugar?");
+                n = parseInt(Math.random()*100 + 1);
+            }
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>
