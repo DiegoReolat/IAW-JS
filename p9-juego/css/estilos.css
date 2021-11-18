@@ -1,0 +1,37 @@
+.acertado{
+    display: none;
+}
+.fin{
+    display: none;
+}
+body{
+    text-align: left;
+}
+main{
+    position: absolute;
+    left:calc(50% - 200px);
+    width:400px;
+    border-left: 2px solid black;
+    padding-left: 15px;
+}
+
+input{
+    height:40px;
+    margin-bottom: 15px;
+    margin-top:15px;
+    width: 345px;
+    border-radius: 6px;
+}
+button{
+    width: 355px;
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+}
+#verde{
+    background-color: lightseagreen;
+}
+#rojo{
+    background-color: darkred;
+}

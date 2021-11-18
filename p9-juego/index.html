@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <div class="jugando">
+            <h1>Partida número <strong class="partidas">1</strong></h1>
+            <label for="numero">Escribe el número que crees que he pensado</label>
+            <br>
+            <input type="number" id="numero">
+            <br>
+        </div>
+        <div class="acertado">
+            <h1>¡Has acertado!</h1>
+            <p>Intentos: <strong id="intentos">1</strong></p>
+        </div>
+        <div class="fin">
+            <h1>Fin del juego</h1>
+            <p>Partidas jugadas: <strong class="partidas"></strong></p>
+            <p>Intentos por partida <strong id="mediaIntentos">6</strong></p>
+        </div>
+        <button id="verde">Comprobar</button>
+        <br>
+        <button id="rojo">Cancelar</button>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/accion.js"></script>
+</body>
+</html>
